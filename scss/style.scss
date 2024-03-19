@@ -1,0 +1,136 @@
+@import "components/imagenes";
+@import "components/redes";
+@import "components/titulo";
+@import "components/search-bar";
+$fondo: negro;
+body {
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    overflow-x: hidden;
+    @if $fondo == blanco {
+        background-color: white
+    }
+    @if $fondo == negro {
+        background-color: black
+    }
+}
+.navegacion {
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+
+}
+.navegacion li {
+    display: inline;
+    margin-left: 10px;
+}
+#navegacion-link {
+    color: white;
+    text-decoration: none;
+}
+.linea-separacion {
+    border-top: 1px solid #ffffff;
+    position: relative;
+    bottom: 75px;
+}
+p{
+    @extend .maps;
+}
+.logo {
+    display: flex;
+    position: sticky;
+    position: relative;
+    top: -80px;
+    width: 80px; 
+    height: auto;
+}
+.maps {
+    text-align: center;
+}
+iframe {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 15px
+}
+.consulta {
+    text-align: left;
+}
+.btn-chalian {
+    background-color: white;
+    position: relative;
+    left: 180px;
+}
+.procesador-titulo {
+    @extend .maps;
+}
+.card-img {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 15px   
+}
+.titulo {
+      position: relative;
+      bottom: 40px;
+}
+.parrafo {
+    position: relative;
+    bottom: 30px;
+}
+.segundo-titulo {
+    padding-bottom: 90px;
+}
+.tercer-titulo {
+    padding-bottom: 90px;
+}
+.reloj {
+    position: relative;
+    bottom: 35px;
+    right: 82px;
+}
+.ping {
+    position: relative;
+    right: 435px;
+    top: 45px;
+}
+.form-control{
+    display: flex;
+    width: 1000px;
+}
+@media only screen and (max-width: 500px) {
+    .tiktok {
+        width: 60px;
+        position: relative;
+        left: 70px;
+    }
+    .twitter {
+        width: 60px;
+        position: relative;
+        left: 50px;
+    }
+    .logo {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        position: sticky;
+        position: relative;
+        top: -80px;
+        width: 80px; 
+        height: auto;
+    }
+    .reloj {
+        position: relative;
+        bottom: 35px;
+        right: 82px;
+    }
+    .ping {
+        position: relative;
+        right: 435px;
+        top: 45px;
+    }
+    .btn-chalian {
+        background-color: white;
+        position: relative;
+        left: 90px;
+    }
+}
+
+/*# sourceMappingURL=style.css.map */
