@@ -63,7 +63,9 @@ body {
   font-family: "Noto Sans", sans-serif;
   color: white;
   overflow-x: hidden;
-  background-color: black;
+  background-image: url(../images/Fondo_Negro_6Superficie_Futurista.webp);
+  background-size: cover;
+  background-position: center;
 }
 
 .navegacion {
